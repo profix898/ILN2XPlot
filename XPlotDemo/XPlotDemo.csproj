@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TikzDemo.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="ILNumerics.Computing" Version="6.0.86" />
+    <PackageReference Include="ILNumerics.Drawing" Version="6.0.86" />
+    <PackageReference Include="ILNumerics.Drawing.Platforms" Version="6.0.86" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.955-prerelease" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ILN2XPlot\ILN2XPlot.csproj" />
+  </ItemGroup>
+</Project>
