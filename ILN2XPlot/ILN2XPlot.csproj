@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <Version>0.6.0</Version>
+    <Version>0.6.1</Version>
     <FileVersion>$(Version)</FileVersion>
     <AssemblyVersion>$(Version)</AssemblyVersion>
     <Copyright>Copyright © 2020-2021 Thilo Viereck</Copyright>
@@ -17,8 +17,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ILNumerics.Computing" Version="6.0.86" />
-    <PackageReference Include="ILNumerics.Drawing" Version="6.0.86" />
+    <PackageReference Include="ILNumerics.Computing" Version="6.0.115" />
+    <PackageReference Include="ILNumerics.Drawing" Version="6.0.115" />
     <PackageReference Include="XPlot.Plotly" Version="4.0.3" />
   </ItemGroup>
   
