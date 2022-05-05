@@ -60,7 +60,19 @@ namespace ILN2XPlot.Generator.Elements
 
             var legend = plotCube.First<ILNLegend>();
             if (legend != null)
-                scatter.name = legend.Find<LegendItem>().FirstOrDefault(legendItem => legendItem.ProviderID == linePlot.ID)?.Text ?? $"Line {labels.Count}";
+            {
+                var legendItems = legend.Find<LegendItem>().ToArray();
+                var legendItem = legendItems.FirstOrDefault(item => item.ProviderID == linePlot.ID);
+                if (legendItem != null)
+                    scatter.name = legendItem.Text;
+                else
+                {
+                    var idx = Array.IndexOf(plotCube.Find<LinePlot>().ToArray(), linePlot);
+                    if (idx != -1 && idx < legendItems.Length)
+                        legendItem = legendItems[idx];
+                    scatter.name = legendItem?.Text ?? $"Line {labels.Count}";
+                }
+            }
 
             traces.Add(scatter);
             labels.Add(scatter.name);

@@ -6,10 +6,10 @@
     <StartupObject>TikzDemo.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="ILNumerics.Computing" Version="6.0.124" />
-    <PackageReference Include="ILNumerics.Drawing" Version="6.0.124" />
-    <PackageReference Include="ILNumerics.Drawing.Platforms" Version="6.0.124" />
-    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1020.30" />
+    <PackageReference Include="ILNumerics.Computing" Version="6.0.127" />
+    <PackageReference Include="ILNumerics.Drawing" Version="6.0.127" />
+    <PackageReference Include="ILNumerics.Drawing.Platforms" Version="6.0.127" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1210.30" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ILN2XPlot\ILN2XPlot.csproj" />
