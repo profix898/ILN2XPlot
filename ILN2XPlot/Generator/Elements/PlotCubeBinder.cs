@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Drawing;
 using ILNumerics.Drawing;
-using ILNumerics.Drawing.Plotting;
 using XPlot.Plotly;
 using ILNLegend = ILNumerics.Drawing.Plotting.Legend;
 

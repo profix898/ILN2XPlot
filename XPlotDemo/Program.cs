@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace TikzDemo
+namespace XPlotDemo
 {
     internal static class Program
     {

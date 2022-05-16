@@ -3,13 +3,14 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <OutputType>WinExe</OutputType>
-    <StartupObject>TikzDemo.Program</StartupObject>
+    <StartupObject>XPlotDemo.Program</StartupObject>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="ILNumerics.Computing" Version="6.0.127" />
     <PackageReference Include="ILNumerics.Drawing" Version="6.0.127" />
     <PackageReference Include="ILNumerics.Drawing.Platforms" Version="6.0.127" />
-    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1210.30" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1210.39" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ILN2XPlot\ILN2XPlot.csproj" />
