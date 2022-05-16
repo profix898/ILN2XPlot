@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using ILNumerics;
 using ILNumerics.Drawing;
-using ILNumerics.Drawing.Plotting;
 using XPlot.Plotly;
 using Surface = ILNumerics.Drawing.Plotting.Surface;
 
@@ -31,7 +29,7 @@ namespace ILN2XPlot.Generator.Elements
             {
                 for (var j = 0; j < positions.S[1]; j++)
                 {
-                    Array<float> xyz = positions[i, j, Globals.full];
+                    Array<float> xyz = positions[i, j, full];
                     var x = (float) xyz[1];
                     if (scaleModes.XAxisScale == AxisScale.Logarithmic)
                         x = (float) Math.Pow(10.0, x);

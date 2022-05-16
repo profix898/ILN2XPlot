@@ -1,4 +1,4 @@
-﻿namespace TikzDemo
+﻿namespace XPlotDemo
 {
     partial class XPlotDemoForm
     {

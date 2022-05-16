@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
-using ILNumerics;
 using ILNumerics.Drawing;
-using ILNumerics.Drawing.Plotting;
 using XPlot.Plotly;
 using ILNLegend = ILNumerics.Drawing.Plotting.Legend;
 using Line = XPlot.Plotly.Line;
 using Marker = XPlot.Plotly.Marker;
-using static ILNumerics.ILMath;
 
 namespace ILN2XPlot.Generator.Elements
 {
@@ -27,8 +24,8 @@ namespace ILN2XPlot.Generator.Elements
 
             var scatter = new Scatter();
 
-            Array<float> xValues = squeeze(linePlot.Positions[0, Globals.full]);
-            Array<float> yValues = squeeze(linePlot.Positions[1, Globals.full]);
+            Array<float> xValues = squeeze(linePlot.Positions[0, full]);
+            Array<float> yValues = squeeze(linePlot.Positions[1, full]);
             if (plotCube.ScaleModes.XAxisScale == AxisScale.Logarithmic)
                 xValues = pow(10f, xValues);
             if (plotCube.ScaleModes.YAxisScale == AxisScale.Logarithmic)

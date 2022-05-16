@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using ILN2XPlot.Generator;
 using ILN2XPlot.Generator.Elements;
-using ILNumerics.Drawing.Plotting;
 using XPlot.Plotly;
 using Scene = ILNumerics.Drawing.Scene;
 
