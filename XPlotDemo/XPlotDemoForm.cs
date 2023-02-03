@@ -37,6 +37,8 @@ namespace XPlotDemo
         private void XPlotDemoForm_Load(object sender, EventArgs e)
         {
             comboBoxScene.SelectedIndex = 0;
+
+            webView.EnsureCoreWebView2Async();
         }
 
         private void comboBoxScene_SelectedIndexChanged(object sender, EventArgs e)

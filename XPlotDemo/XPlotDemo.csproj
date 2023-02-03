@@ -1,16 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <OutputType>WinExe</OutputType>
     <StartupObject>XPlotDemo.Program</StartupObject>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="ILNumerics.Computing" Version="6.0.127" />
-    <PackageReference Include="ILNumerics.Drawing" Version="6.0.127" />
-    <PackageReference Include="ILNumerics.Drawing.Platforms" Version="6.0.127" />
-    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1210.39" />
+    <PackageReference Include="ILNumerics.Computing" Version="6.0.148" />
+    <PackageReference Include="ILNumerics.Drawing" Version="6.0.148" />
+    <PackageReference Include="ILNumerics.Drawing.Platforms" Version="6.0.148" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1518.46" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ILN2XPlot\ILN2XPlot.csproj" />
