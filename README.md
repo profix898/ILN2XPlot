@@ -1,5 +1,6 @@
-ILN2XPlot Export
+ILN2XPlot
 ==========
+[![Nuget](https://img.shields.io/nuget/v/ILN2XPlot?style=flat-square&logo=nuget&color=blue)](https://www.nuget.org/packages/ILN2XPlot)
 
 Export functionality for ILNumerics (http://ilnumerics.net/) scene graphs
 and plot cubes to XPlot [XPlot](https://fslab.org/XPlot/) (interactive data visualization package) with [plotly](https://plotly.com/) backend.
